@@ -4,6 +4,10 @@ public class Rettangolo extends figura {
 	Scanner input = new Scanner ( System . in );
 
     public double base,altezza;
+    
+    Rettangolo(double base, double altezza) {
+    	super(perimetro,area);
+    }
 	
     
 	public double CalcoloPerimetro () {
@@ -13,5 +17,9 @@ public class Rettangolo extends figura {
 	
 	public double CalcoloArea () {
 		return base*altezza;
+	}
+	
+	public void setBase() {
+		
 	}
 }

@@ -11,17 +11,11 @@ public class Triangolo extends figura {
 		setl3(l3);
 		}
 	
-	Triangolo(double l1,double l2,double l3,double perimetro,double area) {
-		super(perimetro,area);
-		setl1(l1);
-		setl2(l2);
-		setl3(l3);
-		}
     public double CalcoloPerimetro () {
     	return l1+l2+l3;
     }
 	public double CalcoloArea () {
-		double Perimetro=l1+l2+l3;
+		double Perimetro = CalcoloPerimetro();
 		return Math.sqrt((Perimetro/2)*((Perimetro/2)-l1)*((Perimetro/2)-l2)*((Perimetro/2)-l3));
 	}
 	
